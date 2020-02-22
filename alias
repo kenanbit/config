@@ -1,0 +1,29 @@
+#!/bin/bash
+
+alias ll='command ls -lh --color=auto'
+alias la='command ls -lah --color=auto'
+
+alias untar='tar -xvf'
+
+alias po='shutdown -h now'
+alias re='shutdown -r now'
+
+alias open='mimeopen'
+alias o='mimeopen'
+
+alias 1="echo DVORAK; setxkbmap dvorak -option 'caps:swapescape' -option 'compose:ralt'" 
+alias 2="echo US; setxkbmap us -option 'caps:swapescape' -option 'compose:ralt'"
+
+alias pp='while ! ping -c 1 google.com; do sleep 1; done'
+alias p='while ! ping -f -i 500 google.com; do sleep 1; done'
+
+alias cp='cp -r'
+alias rcp='rsync -a --stats --progress'
+
+alias gs='git status'
+alias gl='git log --oneline'
+alias gri='git rebase -i origin/master'
+
+function g {
+    grep "$1" . -R
+}
