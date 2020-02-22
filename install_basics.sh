@@ -1,6 +1,9 @@
 #!/bin/bash
+USER=`whoami`
 echo 'Installing basic software stuffs'
 sudo apt install vim-gtk tmux zsh
 
 echo 'Installing oh-my-zsh'
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+yes n | sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo 'Changing default shell to zsh'
+sudo chsh -s /bin/zsh $USER
