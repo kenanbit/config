@@ -23,6 +23,11 @@ alias rcp='rsync -a --stats --progress'
 alias gs='git status'
 alias gl='git log --oneline'
 alias gri='git rebase -i origin/master'
+alias grc='git rebase --continue'
+alias glo='git log --oneline'
+alias gls='git log --stat'
+alias git-fix-commit-order='reset-dates master..HEAD'
+alias delete-merged-branches="git branch --merged origin/master | grep -v '^[ *]*master$' | grep -v '^[ ]*release$' | xargs git branch -d"
 
 function g {
     grep "$1" . -R
