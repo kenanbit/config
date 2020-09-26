@@ -159,7 +159,7 @@ map Y y$
 nnoremap <C-L> :nohl<CR><C-L>
 
 "---------------------KENAN ADDED-----------------------
-set clipboard=unnamed
+set clipboard=unnamedplus
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 set wrap linebreak nolist
@@ -187,11 +187,6 @@ inoremap <C-H> <Esc><C-W><C-H>
 
 inoremap <C-S> <Esc>:w<CR>
 nnoremap <C-S> <Esc>:w<CR>
-
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
 
 set scrolloff=10
 
