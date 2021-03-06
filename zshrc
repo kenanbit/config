@@ -102,3 +102,8 @@ set -o vi
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 source $HOME/.alias
+
+# Since this file and the .alias file is tracked by git, here's an optional extra file to add this-computer-specific aliases or rc
+if [[ -e $HOME/.untracked_rc ]]; then
+    source $HOME/.untracked_rc
+fi
