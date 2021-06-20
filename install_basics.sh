@@ -10,3 +10,6 @@ sudo chsh -s /bin/zsh $USER
 
 echo 'Installing vimwiki'
 git clone https://github.com/vimwiki/vimwiki.git ~/.vim/pack/plugins/start/vimwiki
+
+git config --global user.email "kbitikofer@gmail.com"
+git config --global user.name "Kenan Schaefkofer"

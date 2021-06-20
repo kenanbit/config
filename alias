@@ -14,8 +14,8 @@ alias o='mimeopen'
 alias 1="echo DVORAK; setxkbmap dvorak -option 'caps:swapescape' -option 'compose:ralt'" 
 alias 2="echo US; setxkbmap us -option 'caps:swapescape' -option 'compose:ralt'"
 
-alias vimwiki="vim ~/vimwiki/index.wiki"
-alias vw="vim ~/vimwiki/index.wiki"
+alias vimwiki="vim ~/Code/vimwiki-notes/vimwiki/index.wiki"
+alias vw="vim ~/Code/vimwiki-notes/vimwiki/index.wiki"
 
 alias pp='while ! ping -c 1 google.com; do sleep 1; done'
 alias p='while ! ping -f -i 500 google.com; do sleep 1; done'
@@ -31,6 +31,9 @@ alias glo='git log --oneline'
 alias gls='git log --stat'
 alias git-fix-commit-order='reset-dates master..HEAD'
 alias delete-merged-branches="git branch --merged origin/master | grep -v '^[ *]*master$' | grep -v '^[ ]*release$' | xargs git branch -d"
+
+alias c='xclip -selection clipboard'
+alias v='xclip -o'
 
 function g {
     grep "$1" . -R

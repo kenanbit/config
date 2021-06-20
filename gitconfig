@@ -1,0 +1,14 @@
+[user]
+	email = kbitikofer@gmail.com
+	name = Kenan Schaefkofer
+[pull]
+	rebase = true
+[advice]
+	addIgnoredFile = false
+[alias]
+	co = checkout
+	ci = commit
+        st = status
+        br = branch
+	unstage = reset HEAD --
+        last = log -1 HEAD

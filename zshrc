@@ -107,3 +107,6 @@ source $HOME/.alias
 if [[ -e $HOME/.untracked_rc ]]; then
     source $HOME/.untracked_rc
 fi
+
+# Added so that autocomplete selects newest files first
+zstyle ':completion:*' file-sort modification
